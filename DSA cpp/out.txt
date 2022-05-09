@@ -1,0 +1,10 @@
+4
+Deleted Element : 4
+9
+Deleted Element : 9
+6
+Deleted Element : 6
+1
+Deleted Element : 1
+5
+Deleted Element : 5

@@ -3,21 +3,29 @@ package polymorphism;
 public class Overriding {
 	public static void main(String args []) {
 		Parent p = new Parent();
-		p.funtion();
+		p.function();
 		
 		Child c = new Child();
-		c.funtion();
+		c.function();
+		
+		p.function();
+		c.function();
+		System.out.println(p.a+""+c.a+""+p.a+""+c.a);
 	}
 }
 
 class Parent{
-	void funtion() {
+	int a=10;
+	void function() {
 		System.out.println("Parent Class's Method !!!");
 	}
 }
 
 class Child extends Parent {
-	void funtion() {
+//	@Override
+	int a=20;
+	@Override
+	void function() {
 		System.out.println("Child Class's Method !!!");
 	}
 }
